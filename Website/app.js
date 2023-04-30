@@ -206,10 +206,10 @@ const setTheme = () => {
 
       packageInfoModal.hidden = false;
 
-      setTimeout(() => {
+      requestAnimationFrame(() => {
         const height = packageInfoModal.querySelector('.col').clientHeight;
         modalControl.style.setProperty('--dialog-height', `${height + 14}px`);
-      }, 1);
+      });
     });
   });
 
